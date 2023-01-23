@@ -31,7 +31,7 @@ async function removeContact(contactId) {
   }
   contacts.splice(index, 1);
   await updateContacts(contacts);
-  return contacts[index];
+  return `Contact was successfully deleted!`;
 }
 
 async function addContact({ name, email, phone }) {
